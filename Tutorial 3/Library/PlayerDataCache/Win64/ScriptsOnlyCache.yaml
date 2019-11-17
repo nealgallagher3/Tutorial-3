@@ -1,13 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BGScroller
     - DestroyByBoundary
     - DestroyByContact
     - DestroyByTime
+    - EvasiveManeuver
     - GameController
     - Mover
     - PlayerController
     - RandomRotator
+    - WeaponController
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -71,20 +74,28 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9616}
     - Class: 114
-      Script: {instanceID: 9974}
+      Script: {instanceID: 9902}
     - Class: 114
-      Script: {instanceID: 11752}
+      Script: {instanceID: 9976}
     - Class: 114
-      Script: {instanceID: 12152}
+      Script: {instanceID: 10158}
     - Class: 114
-      Script: {instanceID: 12364}
+      Script: {instanceID: 10186}
     - Class: 114
-      Script: {instanceID: 13752}
+      Script: {instanceID: 10522}
     - Class: 114
-      Script: {instanceID: 15294}
+      Script: {instanceID: 10584}
+    - Class: 114
+      Script: {instanceID: 13788}
+    - Class: 114
+      Script: {instanceID: 15644}
+    - Class: 114
+      Script: {instanceID: 18142}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -631,6 +642,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: d3bbd1f86b55a6168b664522b2cf57b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyByTime
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -721,10 +738,22 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 3aeec2416520303994f9d66901c73317
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyByContact
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Done_DestroyByBoundary
+  - hash:
+      serializedVersion: 2
+      Hash: 813a98d7c38886af7cdb0e991a546577
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomRotator
   - hash:
       serializedVersion: 2
       Hash: 58e68364412c67eae2bdb4954be2dcc2
@@ -775,6 +804,12 @@ ScriptsOnlyBuild:
     className: Done_RandomRotator
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DestroyByBoundary
+  - hash:
+      serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -799,6 +834,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 96579b1d7c32aebb6c65db101ee7a10b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameController
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -817,35 +858,23 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: aa116f49d4d561cc78638f5e95ddd26e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DestroyByBoundary
+    className: BGScroller
   - hash:
       serializedVersion: 2
-      Hash: 813a98d7c38886af7cdb0e991a546577
+      Hash: de7d6a5820dded6c7f75780e98f1dc41
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RandomRotator
+    className: WeaponController
   - hash:
       serializedVersion: 2
-      Hash: 3aeec2416520303994f9d66901c73317
+      Hash: a14a65153fc00399bdbd08766d150d84
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: DestroyByContact
-  - hash:
-      serializedVersion: 2
-      Hash: 7a42db6d9f4b73aecd1554b5626150aa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameController
-  - hash:
-      serializedVersion: 2
-      Hash: d3bbd1f86b55a6168b664522b2cf57b3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DestroyByTime
+    className: EvasiveManeuver
   platform: 19
   scenePathNames:
   - Assets/Scenes/Space Shooter.unity
-  playerPath: D:/Unity Class/Tutorial-3/Tutorial 3/Builds/Build 1/Tutorial 3.exe
+  playerPath: D:/Unity Class/Tutorial-3/Tutorial 3/Builds/Challenge/Tutorial 3.exe
