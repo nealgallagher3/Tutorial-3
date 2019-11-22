@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
             soundSource.Play();
+            //ShotUpgrade();
         }
     }
 
@@ -55,5 +56,13 @@ public class PlayerController : MonoBehaviour
         );
 
         rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Upgrade"))
+        {
+            fireRate = 0.15f;
+            Destroy(other.gameObject);
+        }
     }
 }

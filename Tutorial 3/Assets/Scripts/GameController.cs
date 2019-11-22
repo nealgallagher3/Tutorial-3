@@ -19,7 +19,11 @@ public class GameController : MonoBehaviour
 
     private bool gameOver;
     private bool restart;
-    private int score;
+    public int score;
+
+    public AudioSource musicSource;
+    public AudioClip musicClipOne;
+    public AudioClip musicClipTwo;
 
     void Start()
     {
@@ -85,11 +89,15 @@ public class GameController : MonoBehaviour
             gameOverText.text = "You win! Game created by Neal Gallagher";
             gameOver = true;
             restart = true;
+            musicSource.clip = musicClipOne;
+            musicSource.Play();
         }
     }
     public void GameOver()
     {
         gameOverText.text = "Game Over!";
         gameOver = true;
+        musicSource.clip = musicClipTwo;
+        musicSource.Play();
     }
 }
